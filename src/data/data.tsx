@@ -9,10 +9,7 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -69,31 +66,40 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+
+  name: `Hi, I'm Siva Teja Mattaparthi.`,
+
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        <strong className="text-stone-100">
+          IT Support • Systems Administration • Cyber Security
+        </strong>
       </p>
+
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        I build hands-on IT labs and projects in Windows Server, Active Directory,
+        Microsoft 365, Ticketing, Networking, and PowerShell. This website showcases my
+        projects, technical labs, certifications, and learning journey in IT.
+      </p>
+
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        Away from the keyboard, you'll usually find me exploring aerospace and space
+        technology or writing original movie and story concepts.
       </p>
     </>
   ),
+
   actions: [
     {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
+      href: "/assets/resume.pdf",
+      text: "Resume",
       primary: true,
       Icon: ArrowDownTrayIcon,
     },
     {
-      href: `#${SectionId.Contact}`,
-      text: 'Contact',
+      href: "#projects",
+      text: "Projects",
       primary: false,
     },
   ],
@@ -104,16 +110,38 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I'm an IT graduate with a Master's in Information Technology from RMIT University and a Bachelor's in Computer Science and Engineering from SRM Institute of Science and Technology. I hold an Australian Subclass 485 Graduate Visa and am seeking an entry-level IT Support or Help Desk role to begin my professional career in Australia. I enjoy building hands-on labs, exploring enterprise technologies, and documenting practical solutions.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {
+      label: 'Location',
+      text: 'Melbourne, Victoria',
+      Icon: MapIcon,
+    },
+    {
+      label: 'Age',
+      text: '24',
+      Icon: CalendarIcon,
+    },
+    {
+      label: 'Nationality',
+      text: 'Indian',
+      Icon: FlagIcon,
+    },
+    {
+      label: 'Interests',
+      text: 'Aerospace, Aviation & Creative Writing',
+      Icon: SparklesIcon,
+    },
+    {
+      label: 'Study',
+      text: 'RMIT University',
+      Icon: AcademicCapIcon,
+    },
+    {
+      label: 'Career Focus',
+      text: 'IT Support & Cyber Security',
+      Icon: BuildingOffice2Icon,
+    },
   ],
 };
 
@@ -264,43 +292,50 @@ export const portfolioItems: PortfolioItem[] = [
 ];
 
 /**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
+ * Resume section
  */
+
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'July 2023 – December 2025',
+    location: 'RMIT University • Melbourne, Australia',
+    title: 'Master of Information Technology',
+    content: (
+      <p>
+        Specialised in cloud computing, algorithms, databases, machine learning,
+        and software development while completing practical projects and
+        industry-focused coursework.
+      </p>
+    ),
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'July 2019 – May 2023',
+    location: 'SRM Institute of Science and Technology • Chennai, India',
+    title: 'Bachelor of Computer Science and Engineering',
+    content: (
+      <p>
+        Built a strong foundation in computer science through coursework in
+        programming, data structures, algorithms, compiler design, artificial
+        intelligence, operating systems, software engineering, engineering
+        mathematics, and management principles for engineers.
+      </p>
+    ),
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'July 2025 – November 2025',
+    location: 'Australian Red Cross Lifeblood • Melbourne, Australia',
+    title: 'Software Engineering Intern',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-  {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Contributed to the development of a proof-of-concept Retrieval-Augmented
+        Generation (RAG) solution by implementing AWS Lambda backend services
+        for document processing workflows. Worked with Amazon S3, AWS Lambda,
+        Amazon OpenSearch, and DynamoDB to support document ingestion,
+        processing, indexing, and semantic retrieval for enterprise knowledge
+        search.
       </p>
     ),
   },
@@ -365,9 +400,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/sivateja07'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/sivateja-mattaparthi-2ba302230/'},
 ];
