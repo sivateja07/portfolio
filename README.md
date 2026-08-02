@@ -69,7 +69,7 @@ https://www.linkedin.com/pulse/osi-model-networking-explained-like-bro-before-ex
 Clone the repository
 
 ```bash
-git clone https://github.com/sivateja07/<repo-name>.git
+git clone https://github.com/sivateja07/portfolio.git
 ```
 
 Install dependencies
@@ -120,4 +120,14 @@ https://github.com/sivateja07
 
 ---
 
+## Acknowledgements
+
+This portfolio is built upon the excellent open-source **React Resume Template** created by **Tim Baker**.
+
+The project has been extensively customized and adapted to showcase my own projects, home labs, certifications, and technical articles.
+
+Original project:
+https://github.com/tbakerx/react-resume-template
+
+---
 © 2026 Siva Teja Mattaparthi
