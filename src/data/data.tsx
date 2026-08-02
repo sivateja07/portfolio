@@ -23,7 +23,6 @@ import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
 import {
   About,
   ContactSection,
@@ -33,7 +32,6 @@ import {
   PortfolioItem,
   SkillGroup,
   Social,
-  TestimonialSection,
   TimelineItem,
 } from './dataDef';
 
@@ -41,8 +39,9 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Siva Teja Mattaparthi | IT Support & Systems Administration Portfolio',
+  description:
+    'Portfolio of Siva Teja Mattaparthi showcasing IT Support, Systems Administration, Microsoft 365, Active Directory, Azure, Networking, PowerShell, home labs, certifications, and technical projects.',
 };
 
 /**
@@ -56,7 +55,6 @@ export const SectionId = {
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
-  Testimonials: 'testimonials',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -98,8 +96,8 @@ export const heroData: Hero = {
       Icon: ArrowDownTrayIcon,
     },
     {
-      href: "#projects",
-      text: "Projects",
+      href: "#portfolio",
+      text: "Labs",
       primary: false,
     },
   ],
@@ -150,70 +148,90 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Core IT',
     skills: [
       {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
+        name: 'Windows 10/11',
         level: 9,
       },
       {
-        name: 'Typescript',
-        level: 7,
+        name: 'Linux',
+        level: 9,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'Remote Support',
+        level: 9,
+      },
+      {
+        name: 'Windows Active Directory',
+        level: 9,
+      },
+      {
+        name: 'Microsoft 365',
+        level: 9,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'IT Support',
     skills: [
       {
-        name: 'Node.js',
+        name: 'Microsoft Intune',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'Microsoft Entra ID',
+        level: 8,
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'ServiceNow',
+        level: 8,
+      },
+      {
+        name: 'Jira Service Management',
+        level: 8,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Networking',
     skills: [
       {
-        name: 'React Native',
+        name: 'TCP/IP',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'DNS & DHCP',
+        level: 9,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'VPN & VLANs',
+        level: 8,
+      },
+      {
+        name: 'Routing & Switching',
+        level: 8,
+      },
+    ],
+  },
+  {
+    name: 'Cloud & Automation',
+    skills: [
+      {
+        name: 'Microsoft Azure',
+        level: 9,
+      },
+      {
+        name: 'PowerShell',
+        level: 9,
+      },
+      {
+        name: 'Python',
+        level: 8,
+      },
+      {
+        name: 'Microsoft Sentinel',
+        level: 8,
       },
     ],
   },
@@ -236,9 +254,9 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'OSI Model: Networking Explained Like a Bro Before an Exam',
+    description: 'A beginner-friendly article explaining the seven layers of the OSI Model using simple analogies and practical networking examples. Published on LinkedIn as part of my technical writing series.',
+    url: 'https://www.linkedin.com/pulse/osi-model-networking-explained-like-bro-before-exam-mattaparthi--lf4gc',
     image: porfolioImage3,
   },
   {
@@ -341,57 +359,42 @@ export const experience: TimelineItem[] = [
   },
 ];
 
-/**
- * Testimonial section
- */
-export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
-  testimonials: [
-    {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-    },
-    {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
-  ],
-};
 
 /**
  * Contact section
  */
 
 export const contact: ContactSection = {
-  headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  headerText: 'Get in Touch',
+
+  description:
+    "Whether you're recruiting for an IT Support, Systems Administration, or simply want to connect, feel free to reach out. I'm always happy to discuss technology, projects and new opportunities.",
+
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'mattaparthisivateja@gmail.com',
+      href: 'mailto:mattaparthisivateja@gmail.com',
+    },
+    {
+      type: ContactType.Phone,
+      text: '+61 0466622051',
+      href: 'tel:+610466622051',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Melbourne, Victoria, Australia',
+      href: 'https://maps.google.com/?q=Melbourne,+Victoria,+Australia',
     },
     {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      type: ContactType.LinkedIn,
+      text: 'Sivateja Mattaparthi',
+      href: 'https://www.linkedin.com/in/sivateja-mattaparthi-2ba302230/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'sivateja07',
+      href: 'https://github.com/sivateja07',
     },
   ],
 };
