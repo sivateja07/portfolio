@@ -77,7 +77,7 @@ export const heroData: Hero = {
 
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I build hands-on IT labs and projects in Windows Server, Active Directory,
-        Microsoft 365, Ticketing, Networking, and PowerShell. This website showcases my
+        Microsoft 365, Ticketing, Networking, Remote Desktop and PowerShell. This website showcases my
         projects, technical labs, certifications, and learning journey in IT.
       </p>
 
