@@ -23,11 +23,16 @@ import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
+import tcmHelpDesk from '../images/certifications/tcm-helpdesk.jpg';
+import linuxEssentials from '../images/certifications/linux-essentials.jpg';
+import networkPlus from '../images/certifications/network-plus.jpg';
+import comptiaA from '../images/certifications/comptia-a.jpg';
 import {
   About,
+  Hero,
+  Certification,
   ContactSection,
   ContactType,
-  Hero,
   HomepageMeta,
   PortfolioItem,
   SkillGroup,
@@ -50,11 +55,10 @@ export const homePageMeta: HomepageMeta = {
 export const SectionId = {
   Hero: 'hero',
   About: 'about',
-  Contact: 'contact',
-  Portfolio: 'portfolio',
   Resume: 'resume',
-  Skills: 'skills',
-  Stats: 'stats',
+  Certifications: 'certifications',
+  Portfolio: 'portfolio',
+  Contact: 'contact',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -359,6 +363,38 @@ export const experience: TimelineItem[] = [
   },
 ];
 
+/**
+ * Certifications
+ */
+export const certifications: Certification[] = [
+  {
+    title: 'Practical Help Desk',
+    issuer: 'TCM Security',
+    image: tcmHelpDesk,
+    credentialUrl: '',
+  },
+  {
+    title: 'Linux Essentials',
+    issuer: 'Cisco Networking Academy',
+    image: linuxEssentials,
+    credentialUrl:
+      'https://www.credly.com/badges/3ce7fd8c-1f14-450b-91af-940aea76b506/linked_in_profile',
+  },
+  {
+    title: 'CompTIA Network+',
+    issuer: 'Udemy • Jason Dion',
+    image: networkPlus,
+    credentialUrl:
+      'https://www.udemy.com/certificate/UC-1f1e3cff-81ef-4e3a-b58f-16209cea8f30/',
+  },
+  {
+    title: 'CompTIA A+ Core 1',
+    issuer: 'Udemy • Jason Dion',
+    image: comptiaA,
+    credentialUrl:
+      'https://www.udemy.com/certificate/UC-89dbc461-2bfe-420b-8963-aaa733c8d212/',
+  },
+];
 
 /**
  * Contact section
