@@ -252,9 +252,9 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Windows Active Directory Home Lab',
+    description: 'Configured a Windows Server domain with Active Directory, DNS, Group Policy, and domain-joined clients.',
+    url: '/labs/active-directory',
     image: porfolioImage2,
   },
   {
