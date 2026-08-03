@@ -270,9 +270,9 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'SOHO Router Configuration & Network Troubleshooting Lab',
+    description: 'Configured a TP-Link router and performed network diagnostics.',
+    url: '/labs/soho-router',
     image: porfolioImage5,
   },
   {
