@@ -282,9 +282,9 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage6,
   },
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Windows System Administration and Troubleshooting Lab',
+    description: 'Windows 10 administration and troubleshooting lab with user management, permissions, Task Scheduler, Event Viewer, Registry, CMD, and networking.',
+    url: '/pdfs/windows_lab.pdf',
     image: porfolioImage7,
   },
   {
