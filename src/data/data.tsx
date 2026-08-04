@@ -294,9 +294,9 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage8,
   },
   {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Azure Honeypot Threat Monitoring',
+    description: 'Azure honeypot with Microsoft Sentinel threat monitoring.',
+    url: 'https://github.com/sivateja07/SOC_Honeypot_Azure',
     image: porfolioImage9,
   },
   {
