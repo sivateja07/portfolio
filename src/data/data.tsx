@@ -276,9 +276,9 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage5,
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Linux System Administration Lab',
+    description: 'Ubuntu administration & Core Linux administration tasks and commands',
+    url: '/pdfs/linux_lab.pdf',
     image: porfolioImage6,
   },
   {
