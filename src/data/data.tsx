@@ -246,9 +246,9 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Microsoft 365 Administration Lab',
+    description: 'Hands-on Microsoft 365 administration lab. Coming soon.',
+    url: '',
     image: porfolioImage1,
   },
   {
@@ -296,7 +296,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Azure Honeypot Threat Monitoring',
     description: 'Azure honeypot with Microsoft Sentinel threat monitoring.',
-    url: 'https://github.com/sivateja07/SOC_Honeypot_Azure',
+    url: 'https://github.com/sivateja07/SOC_Honeypot_Azure/blob/main/Report/Sentinel_HP_Report.pdf',
     image: porfolioImage9,
   },
   {
@@ -306,9 +306,9 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage10,
   },
   {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Microsoft Intune Administration Lab',
+    description: 'Microsoft Intune administration lab coming soon.',
+    url: '',
     image: porfolioImage11,
   },
 ];
