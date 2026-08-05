@@ -288,9 +288,9 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage7,
   },
   {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Remote Desktop Administration with SSH',
+    description: 'Performed secure remote administration, file management, permission changes, system monitoring, and secure file transfers over SSH.',
+    url: '/pdfs/ssh_lab.pdf',
     image: porfolioImage8,
   },
   {
