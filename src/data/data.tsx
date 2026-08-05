@@ -264,9 +264,9 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Ticketing Lab-Peppermint',
+    description: 'Deployed and managed a containerised Peppermint Help Desk platform while practicing real-world ITSM ticket creation, troubleshooting, escalation, and resolution workflows.',
+    url: '/pdfs/ticketing_lab.pdf',
     image: porfolioImage4,
   },
   {
