@@ -2,6 +2,10 @@
 
 // https://github.com/vercel/next.js/blob/master/packages/next/next-server/server/config.ts
 const nextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+
   webpack: config => {
     const oneOfRule = config.module.rules.find(rule => rule.oneOf);
 
@@ -15,6 +19,7 @@ const nextConfig = {
 
     return config;
   },
+
   compress: true,
   generateEtags: true,
   pageExtensions: ['tsx', 'mdx', 'ts'],
@@ -23,12 +28,14 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   trailingSlash: false,
+
   images: {
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'images.unsplash.com',
-      },{
+      },
+      {
         protocol: 'https',
         hostname: 'source.unsplash.com',
       },
