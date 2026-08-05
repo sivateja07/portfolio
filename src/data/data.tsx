@@ -300,9 +300,9 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage9,
   },
   {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Bash Scripting, Task Automation and Scheduling (Cron Jobs)',
+    description: 'Developed and executed Bash scripts to automate common system administration tasks, including system reporting, file management, disk monitoring, backups, user interaction, and Cron job scheduling with troubleshooting on macOS (Unix)',
+    url: '/pdfs/bash_lab.pdf',
     image: porfolioImage10,
   },
   {
